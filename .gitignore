@@ -12,6 +12,7 @@ build_bench
 bench.bat
 build.bat
 .p4config
+.DS_Store
 
 ## CMake generated files
 CMakeCache.txt

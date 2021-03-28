@@ -67,12 +67,12 @@ target_include_directories(EASTLTest PUBLIC include)
 #-------------------------------------------------------------------------------------------
 # Dependencies 
 #-------------------------------------------------------------------------------------------
-add_subdirectory(packages/EABase)
-add_subdirectory(packages/EAAssert)
-add_subdirectory(packages/EAStdC)
-add_subdirectory(packages/EAMain)
-add_subdirectory(packages/EATest)
-add_subdirectory(packages/EAThread)
+include(packages/EABase.cmake)
+include(packages/EAAssert.cmake)
+include(packages/EAStdC.cmake)
+include(packages/EAMain.cmake)
+include(packages/EATest.cmake)
+include(packages/EAThread.cmake)
 
 target_link_libraries(EASTLTest EABase)
 target_link_libraries(EASTLTest EAAssert)
@@ -96,4 +96,3 @@ endif()
 #-------------------------------------------------------------------------------------------
 add_test(EASTLTestRuns EASTLTest)
 set_tests_properties (EASTLTestRuns PROPERTIES PASS_REGULAR_EXPRESSION "RETURNCODE=0")
-
