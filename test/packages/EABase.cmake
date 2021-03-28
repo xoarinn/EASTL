@@ -1,7 +1,7 @@
 FetchContent_Declare(
 	EABase
 	GIT_REPOSITORY https://github.com/xoarinn/EABase.git
-	GIT_TAG        2eacb0c337681d96ad341dde64d22eb0e40452cfå
+	GIT_TAG        2eacb0c337681d96ad341dde64d22eb0e40452cf
 )
 
 FetchContent_GetProperties(EABase)
